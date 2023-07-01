@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+  --first-co :#737373 ;
+  --white :white ;
+  --body-co :#FEFCF3;
+  --green-dark :#116A7B;
+  --green :#E1ECC8;
+  --orange-dark : #F86F03;
+  --orange :#FFD4B2;
+  --red-dark :#7E1717;
+  --red :#FF9F9F;
+  --brown :#A35E50;
+  --cyan :#B4E4FF;
+  --cyan-dark :#00337C;
+}
+body {
+  background-color: var(--body-co) ;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tittle {
+  padding: 0 2rem;
+  font-size: 1.8rem;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  color:  var(--white) ;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-shadow: 1px 1px 1px var(--first-co);
+}
+.paragraph {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem;
+  color: var(--first-co);
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+.Content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  gap: 2rem;
+padding: 0  2rem;
+flex-wrap: wrap;
+}
+.Content-p {
+  width: 20rem;
+  border-radius: 7px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+.Content-p_one {
+  background-color: var(--green);
+  color: var(--green-dark);
+  box-shadow: 0 0  15px 3px var(--green);
+}
+.Content-p_two {
+  color: var(--orange-dark);
+  background-color: var(--orange);
+  box-shadow: 0 0 15px 3px var(--orange);
+}
+.Content-p_three {
+  color: var(--red-dark);
+  background-color: var(--red);
+  box-shadow: 0 0 15px 3px var(--red);
+}
+.ContentBox {
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly ;
+  padding:  2rem;
+  height: 32rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.ImgContent {
+  width: 20rem;
+  height: 27.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: var(--brown) ;
+
+}
+.positionBox {
+  margin-top: 2.7rem;
+}
+.box {
+  background-color: var(--orange);
+  width: 20rem ;
+  height: 20rem;
+  border-radius: 3px;
+}
+.box_position {
+  position: relative;
+  left: 3rem;
+  top: 3rem;
+  border-radius: 3px;
+  background-color: var(--red);
+}
+.box_position p {
+  font-size: 1.6rem;
+  color: var(--body-co);
+  position: relative;
+  top: 4.5%;
+  padding: 1rem;
+}
+.slide-in-left {
+	-webkit-animation: slide-in-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.swiper {
+  width: 500px;
+  height: 550px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: var(--red);
+  border-bottom: 4px solid var(--red-dark);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: var(--green);
+  border-bottom: 4px solid var(--green-dark);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color:var(--green-dark);
+  border-bottom: 4px solid var(--green);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: var(--orange);
+  border-bottom: 4px solid var(--orange-dark);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: var(--cyan);
+  border-bottom: 4px solid var(--cyan-dark);
+}
+.ContentSwiperCard {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+}
+.coFirstRed {
+  color: var(--red-dark);
+}
+.pantano {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid var(--body-co);
+  margin-top: 1.7rem;
+}
+.coTwoGreen {
+  color: var(--green-dark);
+}
+.pantano_vol img {
+  margin-top: 1.5rem;
+}
+.ContentSwiperCard_ParagraphCo p {
+  color: var(--green);
+}
+.ContentSwiperCard_CoOrange p {
+  color: var(--orange-dark);
+}
+.ContentSwiperCard_CoBlue p {
+  color: var(--cyan-dark);
+}
